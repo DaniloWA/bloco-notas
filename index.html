@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" tema="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de notas - Danilo Oliveira</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="shortcut icon" href="img/bloco-de-anotacoes-fav.png" type="image/x-icon">
+    
+</head>
+<body>
+
+    <header>
+        <a href="#"><img class="imgBlocoNotas" src="img/bloco-de-anotacoes.png" alt="bloco de Notas"></a>
+        <h1 class="txtBlocosNotas">Bloco de Notas</h1>
+        <label class="txtDark" for="temas" id="temaTxt">Light</label>
+        <a href="#" class="imgSOL" id="temas" onclick="temas()"><img src="img/brightness-high-fill.svg" alt="Sol Claro"></a>
+
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="bloco">
+                <p class="data">21/12/2021</p>
+                <input type="text" autocomplete="off" maxlength="13" class="titulo" name="titulo" id="titulo">
+                <hr class="hrBloco">
+                <a href="#" class="imgBlocoLapis"><img  src="img/pencil-fill.svg" alt="lapis"></a>
+                <a href="#" class="imgBlocoLixo" ><img  src="img/trash-fill.svg" alt="lixo"></a>
+                <textarea class="textAreaBloco" name="textArea" id="textArea"></textarea>
+            </div>
+        </main>
+    </div>
+    <aside>
+        <img class="imgAsideMais" src="img/plus-square-fill.svg" alt="Mais">
+        <hr class="hr1">
+        <p class="asideNumero">0</p>
+        <hr class="hr2">
+        <img class="imgAsideCeta" src="img/arrow-up-circle-fill.svg" alt="Ceta pra cima">
+    </aside>
+    <script src="js/main.js"></script>
+</body>
+</html>
