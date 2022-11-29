@@ -1,2 +1,18 @@
-# bloco-notas
-Um bloco de notas feito com html sass e js. objetivo aprender com o projeto!
+# Bloco de notas JS
+
+Um projeto feito para estudo pessoal! Utilizando SASS e Javascript vanilla! 
+
+## Project features
+
+#### Cria notas dinamicamente
+#### Remove notas dinamicamente
+#### 2 temas: Dark e Light
+
+
+## GIF do Projeto
+![List Product](./img/bloco_notas_gif.gif)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
