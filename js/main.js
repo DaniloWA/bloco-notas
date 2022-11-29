@@ -56,6 +56,7 @@ function adcElemento(){ //Cria e Adiciona os elementos novos
 
     a2.href="#" 
     a2.className="imgBlocoLixo"
+    a2.onclick= excluir
 
 
 
@@ -70,7 +71,7 @@ function adcElemento(){ //Cria e Adiciona os elementos novos
     txtArea.id="textArea"
     txtArea.placeholder = "Escrava sua Nota!"
     
-    //Adicionando elemenntos
+    //Adicionando elementos
     div.appendChild(divB)
     divB.appendChild(data)
     divB.appendChild(inputTXT)
@@ -83,7 +84,6 @@ function adcElemento(){ //Cria e Adiciona os elementos novos
 
     data.innerHTML = getHora()
     adicionarNumero()
-    excluir()
 }
 
 function getHora() { //Pega a Data atual
@@ -105,26 +105,16 @@ function adicionarNumero(){
 
     contadorNumero ++
 
-    console.log("Adicionar : + " + contadorNumero)
-
     txtContador.innerHTML = contadorNumero
 }
 
 function excluir(){
+
     let txtContador = document.getElementById("ContadorHTML")
-    let lixo = document.getElementsByClassName("imgBlocoLixo")
-    let lixos = [] 
 
-    lixos.push("Contador : " + contadorNumero + " : " + lixo[2])
-    console.log("Lixos : - " + lixos)
-    /* 
-    lixo[contadorNumero].addEventListener("click", function(){
+    contadorNumero --
 
-        console.log("Excluir : - " + contadorNumero)
+    txtContador.innerHTML = contadorNumero
 
-        contadorNumero --   
-        txtContador.innerHTML = contadorNumero 
-      });
-      */
-
+    this.parentNode.remove()
 }
