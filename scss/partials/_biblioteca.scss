@@ -1,7 +1,7 @@
 @use "sass:math";
 @use "sass:string";
 @use "sass:color";
-@use "partials/variaveis" as var;
+@use "_variaveis.scss" as var;
 
 
 
@@ -220,7 +220,7 @@
 @mixin aside($templete){
     aside{
         top: 70px;
-        left: 96.4vw;
+        right:0;
         display: grid;
         position: fixed;
         width: 3em;
