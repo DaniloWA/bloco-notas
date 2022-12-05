@@ -1,7 +1,7 @@
 # Bloco de notas JS
 
 Um projeto feito para estudo pessoal! Utilizando SASS e Javascript vanilla! 
-
+# [Live Demo](https://blocodenotas.daniloo.dev/) - Teste a aplicação.
 ## Project features
 
 #### Cria notas dinamicamente
